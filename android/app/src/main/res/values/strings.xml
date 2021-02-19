@@ -1,0 +1,7 @@
+<resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">_hkd6H7HGxNSaZlC-OKi11YWG4n1V-tYCY9je</string>
+    <string name="app_name">无人智慧营业厅</string>
+    <string name="app_name_debug">无人智慧营业厅-开发</string>
+    <string name="app_name_dev">无人智慧营业厅-测试</string>
+    <string name="app_name_pre">无人智慧营业厅-预发</string>
+</resources>
