@@ -145,9 +145,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
+// 
     defaultConfig {
-        applicationId "com.service.intelligence" + (_org == 'default' ? "" : "."+_org)
+        applicationId "com.service.intelligence"+ (_org == 'default' ? "" : "."+_org)
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -242,6 +242,8 @@ dependencies {
     implementation project(':@sentry_react-native')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation 'com.blankj:utilcodex:1.30.5'
+    implementation files('libs\\newGather_NoView-1.7.0-beta.jar')
 
 
 

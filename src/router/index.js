@@ -11,12 +11,31 @@ import { NavigationActions, StackActions } from "react-navigation";
 
 export default createAppContainer(
   withNavigation(
-    createStackNavigator(
-      {
+    createStackNavigator({
         ScreenProtect: {
-          screen: require("@/pages/screensaver").default,
+          screen: require("@/pages/home").default,
           navigationOptions: {
-            // header: null,
+            header: null,
+          },
+        },
+        SettingParameter: {
+          screen: require("@/pages/setting").default,
+          navigationOptions: {
+            header: null,
+          },
+        },
+      
+        Collect: {
+          screen: require("@/pages/collect").default,
+          navigationOptions: {
+            header: null,
+          },
+        },
+      
+        CollectComplete: {
+          screen: require("@/pages/collectComplete").default,
+          navigationOptions: {
+            header: null,
           },
         },
       },
